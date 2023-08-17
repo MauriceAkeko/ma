@@ -1,3 +1,5 @@
+import random
+
 def play():
     player_choice = var.get()
     choice = ["Pierre", "Feuille", "Ciseaux"]
