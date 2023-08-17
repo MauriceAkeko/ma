@@ -1,0 +1,15 @@
+def play():
+    player_choice = var.get()
+    choice = ["Pierre", "Feuille", "Ciseaux"]
+    computer_choice = random.choice(choice)
+
+    result_text.set(f"Ordinateur choisit: {computer_choice}\n")
+
+    if player_choice == computer_choice:
+        result_text.set(result_text.get() + "Égalité!")
+    elif (player_choice == "Pierre" and computer_choice == "Ciseaux") or \
+            (player_choice == "Feuille" and computer_choice == "Pierre") or \
+            (player_choice == "Ciseaux" and computer_choice == "Feuille"):
+        result_text.set(result_text.get() + "Vous gagnez!")
+    else:
+        result_text.set(result_text.get() + "Ordinateur gagne!")
