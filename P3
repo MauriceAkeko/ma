@@ -1,0 +1,16 @@
+# Créer des Radiobuttons pour les choix du joueur
+var = tk.StringVar()
+var.set("Pierre")  # Valeur par défaut
+choices = ["Pierre", "Feuille", "Ciseaux"]
+tk.Radiobutton(root, text="Pierre", variable=var, value="Pierre", font=("Arial Black", 15), cursor="target").place(x=20, y=197)
+tk.Radiobutton(root, text="Feuille", variable=var, value="Feuille", font=("Arial Black", 15), cursor="target").place(x=150, y=197)
+tk.Radiobutton(root, text="Ciseaux", variable=var, value="Ciseaux", font=("Arial Black", 15), cursor="target").place(x=300, y=197)
+
+# Bouton pour jouer
+play_button = tk.Button(root, text="Jouer",fg="#458B74", bg="#66CDAA", bd=7, command=play)
+play_button.place(x=150, y=89)
+
+# Texte pour afficher le résultat
+result_text = tk.StringVar()
+result_label = tk.Label(root, textvariable=result_text)
+result_label.pack()
