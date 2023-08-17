@@ -1,0 +1,10 @@
+import tkinter as tk
+
+# Créer une fenêtre Tkinter
+root = tk.Tk()
+root.title("ROCK , PAPER, SCISSORS GAME")
+root.geometry('500x400')
+root.config(bg="#007FFF")
+
+# Lancer la boucle principale Tkinter
+root.mainloop()
